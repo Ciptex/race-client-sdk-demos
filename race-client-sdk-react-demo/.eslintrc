@@ -1,69 +1,47 @@
 {
-    "root": true,
-    "parser": "@typescript-eslint/parser",
-    "plugins": [
-        "@typescript-eslint"
-    ],
-    "extends": [
-        "eslint:recommended",
-        "plugin:@typescript-eslint/eslint-recommended",
-        "plugin:@typescript-eslint/recommended",
-        "plugin:react/recommended",
-        "plugin:react/jsx-runtime"
-    ],
-    "env": {
-        "es6": true,
-        "jest": true
-    },
-    "rules": {
-        "@typescript-eslint/no-explicit-any": 0,
-        "import/no-unused-modules": 0,
-        "prettier/prettier": 0,
-        "@typescript-eslint/no-non-null-assertion": 0,
-        "no-duplicate-imports": 2,
-        "no-use-before-define": 2,
-        "block-scoped-var": 2,
-        "default-case": 2,
-        "default-case-last": 2,
-        "default-param-last": 2,
-        "no-var": 2,
-        "no-new-func": 2,
-        "no-plusplus": 2,
-        "no-continue": 2,
-        "no-labels": 2,
-        "comma-dangle": [
-            "error",
-            "never"
-        ],
-        "strict": 2,
-        "no-self-compare": 1,
-        "camelcase": 1,
-        "prefer-arrow-callback": 1,
-        "prefer-const": 1,
-        "prefer-destructuring": 1,
-        "prefer-object-spread": 1,
-        "prefer-spread": 1,
-        "sort-imports": 0,
-        "spaced-comment": 1,
-        "comma-spacing": [
-            "warn",
-            {
-                "before": false,
-                "after": true
-            }
-        ],
-        "indent": [
-            "warn",
-            "tab"
-        ],
-        "no-trailing-spaces": 1,
-        "object-curly-spacing": [
-            "warn",
-            "always"
-        ],
-        "quotes": [
-            "warn",
-            "double"
-        ]
-    }
+  "root": true,
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:react/recommended",
+    "plugin:react/jsx-runtime"
+  ],
+  "env": {
+    "es6": true,
+    "jest": true
+  },
+  "rules": {
+    "@typescript-eslint/no-explicit-any": 0,
+    "import/no-unused-modules": 0,
+    "prettier/prettier": 0,
+    "@typescript-eslint/no-non-null-assertion": 0,
+    "no-duplicate-imports": 2,
+    "no-use-before-define": 2,
+    "block-scoped-var": 2,
+    "default-case": 2,
+    "default-case-last": 2,
+    "default-param-last": 2,
+    "no-var": 2,
+    "no-new-func": 2,
+    "no-plusplus": 2,
+    "no-continue": 2,
+    "no-labels": 2,
+    "strict": 2,
+    "no-self-compare": 1,
+    "camelcase": 1,
+    "prefer-arrow-callback": 1,
+    "prefer-const": 1,
+    "prefer-destructuring": 1,
+    "prefer-object-spread": 1,
+    "prefer-spread": 1,
+    "sort-imports": 0,
+    "spaced-comment": 1,
+    "indent": ["warn", "tab"],
+    "no-trailing-spaces": 1,
+    "object-curly-spacing": ["warn", "always"],
+    "quotes": ["warn", "double"]
+  }
 }

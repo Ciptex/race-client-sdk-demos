@@ -1,5 +1,5 @@
 import { Context, createContext, FC, useCallback, useEffect, useState } from "react";
-import { TwilioVideo, Video } from "@ciptex/race-client-sdk";
+import { Video } from "@ciptex/race-client-sdk";
 import { ReactElementProps } from "../../interface";
 import { ACCOUNT_SID, IDENTITY } from "../../constants";
 
@@ -37,7 +37,7 @@ export const VideoProvider: FC<ReactElementProps> = ({ children }: ReactElementP
 
 		const created = () => {
 			console.info("[Client] video#created recieved");
-			video?.localTracks?.forEach((track: TwilioVideo.LocalTrack) => {
+			video?.localTracks?.forEach((track) => {
 				track.kind === "audio" && track.on("disabled", disabled);
 				track.kind === "audio" && track.on("enabled", enabled);
 			});
@@ -63,7 +63,7 @@ export const VideoProvider: FC<ReactElementProps> = ({ children }: ReactElementP
 		}
 
 		return () => {
-			video?.localTracks?.forEach((track: TwilioVideo.LocalTrack) => {
+			video?.localTracks?.forEach((track) => {
 				track.off("disabled", disabled);
 				track.off("enabled", enabled);
 			});

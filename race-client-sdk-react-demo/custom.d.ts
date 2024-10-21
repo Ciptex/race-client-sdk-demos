@@ -1,3 +1,4 @@
+declare module "twilio-video"
 declare module "*.svg" {
     const content: any;
     export default content;
