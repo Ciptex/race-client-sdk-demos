@@ -6,7 +6,7 @@ import { Popover, PopoverButton, PopoverContainer } from "@twilio-paste/core/pop
 import { UnmuteButton } from "./UnmuteButton";
 import { MuteButton } from "./MuteButton";
 import { Box } from "@twilio-paste/core/box";
-import { useSyncContext } from "src/hooks/useSyncContext";
+import { useSyncContext } from "../../../src/hooks/useSyncContext";
 
 export const VoiceButton: FC = () => {
 	const { connect, voice, disconnect, status, isMuted } = useVoiceContext();
@@ -14,7 +14,7 @@ export const VoiceButton: FC = () => {
 
 	return (<PopoverContainer baseId="voice-controls">
 		<PopoverButton onClick={() => connect()} disabled={!isLoading && kioskStatus === "closed"} variant="primary" loading={!voice?.ready || isLoading}><ProductVoiceIcon decorative={true} />
-				Start Voice Call
+			Start Voice Call
 		</PopoverButton>
 		<Popover aria-label="Popover">
 			{status !== "closed" ? <Box width="150px" padding="space40">

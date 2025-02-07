@@ -1,6 +1,6 @@
 import { Sync } from "@ciptex/race-client-sdk";
 import { Context, createContext, FC, useEffect, useState } from "react";
-import { ACCOUNT_SID, IDENTITY, KIOSK_ID } from "src/constants";
+import { ACCOUNT_SID, IDENTITY, KIOSK_ID } from "../../constants";
 import { ReactElementProps } from "src/interface";
 
 export type SyncContextType = {
@@ -21,9 +21,9 @@ export const SyncProvider: FC<ReactElementProps> = ({ children }: ReactElementPr
 
 	useEffect(() => {
 		console.info("[SyncProvider] Sync Changes Detected", sync, statusDocument);
-		if(sync && statusDocument) {
+		if (sync && statusDocument) {
 			const current: any = statusDocument.data;
-			if(current.status) {
+			if (current.status) {
 				setStatus(current.status);
 				setIsLoading(false);
 			}
@@ -45,8 +45,8 @@ export const SyncProvider: FC<ReactElementProps> = ({ children }: ReactElementPr
 
 	const init = async () => {
 		try {
-			if(!ACCOUNT_SID || !IDENTITY || !KIOSK_ID) {
-				throw new Error ("Missing ACCOUNT_SID or IDENTITY or KIOSK_ID Variables");
+			if (!ACCOUNT_SID || !IDENTITY || !KIOSK_ID) {
+				throw new Error("Missing ACCOUNT_SID or IDENTITY or KIOSK_ID Variables");
 			}
 
 			setIsLoading(true);
