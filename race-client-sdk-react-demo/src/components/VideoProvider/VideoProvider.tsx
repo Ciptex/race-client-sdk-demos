@@ -58,7 +58,12 @@ export const VideoProvider: FC<ReactElementProps> = ({ children }: ReactElementP
 
 			video.connect({
 				localMediaContainer: localMediaContainer,
-				remoteMediaContainer: remoteMediaContainer
+				remoteMediaContainer: remoteMediaContainer,
+				customParameters: {
+					"custom-string": "we accept strings, numbers, and booleans",
+					"custom-number": 123,
+					"custom-boolean": true
+				}
 			});
 		}
 
@@ -72,8 +77,8 @@ export const VideoProvider: FC<ReactElementProps> = ({ children }: ReactElementP
 
 	const init = (): void => {
 		try {
-			if(!ACCOUNT_SID || !IDENTITY || !KIOSK_ID) {
-				throw new Error ("Missing ACCOUNT_SID or IDENTITY or KIOSK_ID Variables");
+			if (!ACCOUNT_SID || !IDENTITY || !KIOSK_ID) {
+				throw new Error("Missing ACCOUNT_SID or IDENTITY or KIOSK_ID Variables");
 			}
 
 			const v = new Video({

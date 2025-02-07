@@ -7,7 +7,7 @@ import { Box } from "@twilio-paste/core/box";
 import { useVideoContext } from "../../hooks/useVideoContext";
 import { MuteButton } from "./MuteButton";
 import { UnmuteButton } from "./UnmuteButton";
-import { useSyncContext } from "src/hooks/useSyncContext";
+import { useSyncContext } from "../../hooks/useSyncContext";
 
 export const VideoButton: FC = () => {
 	const { video, isMuted, isOpen, localVideoMedia, remoteVideoMedia, connect, disconnect } = useVideoContext();
@@ -15,7 +15,7 @@ export const VideoButton: FC = () => {
 	const modalHeadingID = useUID();
 
 	return (<>
-		<Button variant="primary" onClick={connect} disabled={!isLoading && kioskStatus === "closed"} loading={!video?.ready || isLoading}><ProductVideoIcon decorative={true}  /> Start Video Call</Button>
+		<Button variant="primary" onClick={connect} disabled={!isLoading && kioskStatus === "closed"} loading={!video?.ready || isLoading}><ProductVideoIcon decorative={true} /> Start Video Call</Button>
 		<Modal ariaLabelledby={modalHeadingID} isOpen={isOpen} onDismiss={disconnect} size="wide">
 			<ModalHeader>
 				<ModalHeading as="h3" id={modalHeadingID}>Video Call Us</ModalHeading>
