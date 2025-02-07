@@ -1,4 +1,3 @@
-
 # Race Client SDK Demos
 
 [![Publish](https://github.com/Ciptex/race-client-sdk-demos/actions/workflows/push.yml/badge.svg?branch=main)](https://github.com/Ciptex/race-client-sdk-demos/actions/workflows/push.yml)
@@ -28,14 +27,25 @@ cd race-client-sdk-demos
 
 ## Install Dependencies
 
-Run `npm install` inside the `race-client-sdk-react-demo` folder to install all dependencies for the react app from NPM.
+Run `npm install` inside the `race-client-sdk-react-demo` folder to install all dependencies for the Vite-powered React app from NPM.
 
-Race Client SDK can be used to power javascript applications with [Voice](https://www.twilio.com/voice), [Video](https://www.twilio.com/video), [Webchat](https://www.twilio.com/flex) and [Forms](https://marketplace.ciptex.com/app/PAfa4d450ce32f45fea35b0409de2de792) from a single SDK. Functionality is Lazy Loaded on demand based on functionality initalised to reduce Package Size.
+Race Client SDK can be used to power JavaScript applications with [Voice](https://www.twilio.com/voice), [Video](https://www.twilio.com/video), [Webchat](https://www.twilio.com/flex), and [Forms](https://marketplace.ciptex.com/app/PAfa4d450ce32f45fea35b0409de2de792) from a single SDK. Functionality is Lazy Loaded on demand based on functionality initialized to reduce package size.
+
+## Running the Application
+
+Navigate to the `race-client-sdk-react-demo` folder and start the development server:
+
+```
+cd race-client-sdk-react-demo
+npm run dev
+```
+
+This will start the Vite development server and provide a local URL for testing.
 
 ## Features
 
- - [x] Twilio Flex Webchat Integration
- - [x] Twilio Voice WebRTC Calling
- - [x] Twilio Video Calling Directly from your website
- - [x] Ciptex Race Forms Integration. Render Contact Forms
- - [x] Segment Integration - All actions feed events automatically to [segment](https://segment.com)
+- [x] Twilio Flex Webchat Integration
+- [x] Twilio Voice WebRTC Calling
+- [x] Twilio Video Calling Directly from your website
+- [x] Ciptex Race Forms Integration. Render Contact Forms
+- [x] Segment Integration - All actions feed events automatically to [Segment](https://segment.com)
