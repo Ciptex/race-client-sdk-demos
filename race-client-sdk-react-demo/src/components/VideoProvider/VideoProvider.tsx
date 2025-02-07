@@ -60,7 +60,9 @@ export const VideoProvider: FC<ReactElementProps> = ({ children }: ReactElementP
 				localMediaContainer: localMediaContainer,
 				remoteMediaContainer: remoteMediaContainer,
 				customParameters: {
-					"custom-data": "custom-data-value"
+					"custom-string": "we accept strings, numbers, and booleans",
+					"custom-number": 123,
+					"custom-boolean": true
 				}
 			});
 		}
