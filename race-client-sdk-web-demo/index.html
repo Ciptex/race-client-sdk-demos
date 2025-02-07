@@ -1,42 +1,48 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <script src="env.js"></script>
-    </head>
-    <body onload="SyncInit();FormInit(); FlexChatInit(); VoiceInit(); VideoInit();">
-        <h1>Javascript Race Client SDK Demonstration</h1>
 
-        <h2 id="status-label"></h2>
+<head>
+    <script src="env.js"></script>
+</head>
 
-        <div style="max-width: 1000px; height: 100%; max-height: 1000px; padding: 20px; padding-bottom: 0px">
-            <button id="video-call-btn" disabled onclick="VideoCallMe()">Video CALL</button>
-            <button id="video-hangup-btn" style="display: none" onclick="VideoHangup()">Hangup!!</button>
-            <button id="video-mute-btn" style="display: none" onclick="VideoMute()">Mute!!</button>
-            <button id="video-unmute-btn" style="display: none" onclick="VideoUnmute()">Unmute!!</button>
-        </div>
-        <div style="position: relative; max-width: 1000px; height: 100%; max-height: 1000px; border-bottom: 1px solid green; padding: 20px; padding-top: 0px">
+<body onload="SyncInit();FormInit(); FlexChatInit(); VoiceInit(); VideoInit();">
+    <h1>Javascript Race Client SDK Demonstration</h1>
+
+    <h2 id="status-label"></h2>
+
+    <div style="max-width: 1000px; height: 100%; max-height: 1000px; padding: 20px; padding-bottom: 0px">
+        <button id="video-call-btn" disabled onclick="VideoCallMe()">Video CALL</button>
+        <button id="video-hangup-btn" style="display: none" onclick="VideoHangup()">Hangup!!</button>
+        <button id="video-mute-btn" style="display: none" onclick="VideoMute()">Mute!!</button>
+        <button id="video-unmute-btn" style="display: none" onclick="VideoUnmute()">Unmute!!</button>
+    </div>
+    <div
+        style="position: relative; max-width: 1000px; height: 100%; max-height: 1000px; border-bottom: 1px solid green; padding: 20px; padding-top: 0px">
         <div id="video-container" style="position: relative; min-height: 300px; display: none; margin-top: 20px">
             <div id="RemoteVideoMedia" style="position: relative; overflow: hidden; border-radius: 10px;"></div>
-            <div id="LocalVideoMedia" style="position: absolute; width: 40%; border-radius: 10px; overflow: hidden; top: 0; z-index: 100"></div>
+            <div id="LocalVideoMedia"
+                style="position: absolute; width: 40%; border-radius: 10px; overflow: hidden; top: 0; z-index: 100">
+            </div>
         </div>
-        </div>
+    </div>
 
-        <div style="max-width: 1000px; height: 100%; max-height: 1000px; border-bottom: 1px solid green; padding: 20px;">
-            <button id="voice-call-btn" disabled onclick="VoiceCallMe()">Voice CALL</button>
-            <button id="voice-hangup-btn" onclick="VoiceHangup()" style="display: none">Hangup!!</button>
-            <button id="voice-mute-btn" style="display: none" onclick="VoiceMute()">Mute!!</button>
-            <button id="voice-unmute-btn" style="display: none" onclick="VoiceUnmute()">Unmute!!</button>
-        </div>
+    <div style="max-width: 1000px; height: 100%; max-height: 1000px; border-bottom: 1px solid green; padding: 20px;">
+        <button id="voice-call-btn" disabled onclick="VoiceCallMe()">Voice CALL</button>
+        <button id="voice-hangup-btn" onclick="VoiceHangup()" style="display: none">Hangup!!</button>
+        <button id="voice-mute-btn" style="display: none" onclick="VoiceMute()">Mute!!</button>
+        <button id="voice-unmute-btn" style="display: none" onclick="VoiceUnmute()">Unmute!!</button>
+    </div>
 
-        <div id="form" style="margin-top: 20px; padding: 20px">
+    <div id="form" style="margin-top: 20px; padding: 20px">
 
-        </div>
+    </div>
 
-        <script src="https://cdn.ciptex.com/race-client-sdk/1.14.0/race-client-sdk.min.js" crossorigin="anonymous"></script>
-        <script src="sync.js"></script>
-        <script src="form.js"></script>
-        <script src="flexchat.js"></script>
-        <script src="video.js"></script>
-        <script src="voice.js"></script>
-    </body>
+    <script src="https://cdn.ciptex.com/race-client-sdk/1.32.0/race-client-sdk.min.js" crossorigin="anonymous"></script>
+    <script src="sync.js"></script>
+    <script src="form.js"></script>
+    <script src="flexchat.js"></script>
+    <script src="video.js"></script>
+    <script src="voice.js"></script>
+</body>
+
 </html>
